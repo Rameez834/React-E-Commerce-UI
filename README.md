@@ -1,16 +1,31 @@
-# React + Vite
+# React E-Commerce UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React routing-based product showcase application with dynamic categories and responsive UI.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React Router DOM for navigation
+- Nested routing (Product → Men / Women)
+- Responsive product cards UI
+- Tailwind CSS styling
+- Home, About, Contact pages
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React JS
+- React Router DOM
+- Tailwind CSS
+- Vite
 
-## Expanding the ESLint configuration
+## 📸 Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Home Page
+- Product Page
+- Men Category
+- Women Category
+- About Page
+- Contact Page
+
+---
+
+💡 Built for learning and interview practice
