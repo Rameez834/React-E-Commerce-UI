@@ -1,15 +1,14 @@
-import { Link } from "react-router-dom"
-import { Outlet } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom";
 
 const Product = () => {
   return (
-    <div className="min-h-screen p-10 bg-gray-100">
+    <div className="min-h-screen bg-gray-100 p-4 sm:p-8">
 
-      <h1 className="text-3xl font-bold mb-8 text-center">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center mb-10">
         Products Category
       </h1>
 
-      <div className="flex justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-4">
 
         <Link
           to="Men"
@@ -24,13 +23,15 @@ const Product = () => {
         >
           Women
         </Link>
+
       </div>
+
       <div className="mt-10">
-        <Outlet/>
+        <Outlet />
       </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;

@@ -25,35 +25,44 @@ const Men = () => {
       price: "$80",
       img: "https://images.unsplash.com/photo-1520975916090-3105956dac38"
     }
-  ]
+  ];
 
   return (
-    <div className="min-h-screen p-10 bg-gray-100">
+    <div>
 
-      <h1 className="text-4xl font-bold text-center mb-10">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center mb-10">
         Men Products
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
         {products.map((item) => (
           <div
             key={item.id}
-            className="bg-white shadow-lg rounded-xl p-5 hover:scale-105 transition duration-300"
+            className="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition"
           >
 
             <img
               src={item.img}
               alt={item.name}
-              className="h-40 w-full object-cover rounded-md mb-4"
+              className="w-full h-56 object-cover"
             />
 
-            <h2 className="text-xl font-semibold">{item.name}</h2>
-            <p className="text-gray-600 mt-2">{item.price}</p>
+            <div className="p-5">
 
-            <button className="mt-4 w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800">
-              Buy Now
-            </button>
+              <h2 className="text-xl font-semibold">
+                {item.name}
+              </h2>
+
+              <p className="text-gray-600 mt-2">
+                {item.price}
+              </p>
+
+              <button className="mt-4 w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800">
+                Buy Now
+              </button>
+
+            </div>
 
           </div>
         ))}
@@ -61,7 +70,7 @@ const Men = () => {
       </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default Men
+export default Men;
